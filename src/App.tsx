@@ -2,23 +2,21 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
+import RootLayout from './layout/RootLayout'
 
-function App() {
+export default function App() {
 
   const browserRouter = createBrowserRouter(
     createRoutesFromElements(
-      <Route>
-        <Route path="/" element={<Home />} />
+      <Route path='/' element={<RootLayout/>}>
+        <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
       </Route>
     )
   );
 
-  return (
-    <div className="~top-20/48 relative flex flex-col items-center">
-      <RouterProvider router={browserRouter} />
-    </div>
-  )
+  return <RouterProvider router={browserRouter} />
 }
-export default App
+
+
