@@ -6,11 +6,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, #6c00a2, #001152);
+    overflow-x: hidden;
 }
 
 .active {
     p {
         color: royalblue;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(to right, #1e47b8, #131010);
+    --foreground: #eef4dc;
+  }
 }
