@@ -16,7 +16,7 @@ export default function BgSetter({}: Props) {
       case "lines":
         return (
           <BackgroundLines>
-            <div />
+            <div/>
           </BackgroundLines>
         );
       case "beams":
@@ -49,7 +49,7 @@ export default function BgSetter({}: Props) {
   };
 
   return (
-    <div>
+    <div className="-z-20">
       <SideBar handleBgChange={setBgStyle} />
       <div>{renderBackground(bgStyle)}</div>
     </div>

@@ -5,14 +5,13 @@ import App from "./App.tsx";
 import Footer from "./components/Footer.tsx";
 import BgSetter from "./_components/BgSetter.tsx";
 
-
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <div className="w-screen min-h-screen">
-      <App />
-      <div className="absolute top-56 left-0">
+      <div className="absolute top-80 left-0">
         <BgSetter />
       </div>
+      <App />
     </div>
     <Footer />
   </StrictMode>
