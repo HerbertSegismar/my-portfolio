@@ -8,7 +8,7 @@ import BgSetter from "./_components/BgSetter.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <div className="w-screen min-h-screen">
-      <div className="absolute top-80 left-0">
+      <div className="absolute top-40 left-0">
         <BgSetter />
       </div>
       <App />
