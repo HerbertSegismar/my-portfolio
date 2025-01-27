@@ -50,7 +50,7 @@ export default function Navbar({}: Props) {
   ];
 
   return (
-    <div className="bg-black/90 w-screen ~h-12/20 flex items-center justify-between p-4 absolute left-0 right-0 top-0">
+    <div className="fixed bg-black/90 w-screen ~h-12/20 flex items-center justify-between p-4 left-0 right-0 top-0 z-50">
       <div
         onClick={() => {
           navigate("/");

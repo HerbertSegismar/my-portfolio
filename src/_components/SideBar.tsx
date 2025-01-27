@@ -13,11 +13,11 @@ const SideBar: React.FC<SideBarProps> = ({ handleBgChange }) => {
   };
 
   return (
-    <div className="fixed ~w-14/20 h-auto flex flex-col items-center z-60">
+    <div className="absolute ~w-14/20 h-auto flex flex-col items-center">
       <motion.div
         animate={{ y: showSideBar ? "200vh" : 0 }}
         transition={{ duration: 1, type: "spring" }}
-        className="~w-14/16 ~h-80/96 ~left-4/10 ~top-60/96 fixed z-60"
+        className="~w-14/16 ~h-80/96 ~left-4/10 ~top-60/96 fixed"
       >
         <div className="flex flex-col items-center justify-center w-full h-full bg-black/20 gap-4 rounded-full">
           <button
